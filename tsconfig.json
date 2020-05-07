@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es5",
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "lib": ["es2016", "dom", "es5"]
+  }
+}

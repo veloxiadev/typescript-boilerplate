@@ -1,0 +1,24 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "author": "Viktor Svensson <viktor@veloxia.se> (https://www.veloxia.se)",
+  "license": "MIT",
+  "scripts": {
+    "clean:dist": "[ ! -d dist ] || ./node_modules/.bin/rimraf dist",
+    "clean:docs": "[ ! -d docs ] || ./node_modules/.bin/rimraf docs",
+    "build:main": "yarn clean:dist && tsc --build tsconfig.json",
+    "build:docs": "yarn clean:docs && ./node_modules/.bin/typedoc --readme ./README.md --out docs src",
+    "build": "yarn build:main && yarn build:docs"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "typedoc": "^0.17.6",
+    "typescript": "^3.8.3"
+  }
+}
