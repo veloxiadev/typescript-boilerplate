@@ -1,11 +1,16 @@
 /**
- * Dummy function.
- * @param message Message to display.
+ * Some numbers.
  */
-export function writeMessage(message?: string): string {
-  const msg = message || "Hello";
-  console.dir(msg);
-  return msg;
+export enum Delays {
+  Short = 500,
+  Medium = 2000,
+  Long = 5000,
 }
-
-export default writeMessage;
+/**
+ * Says hello to you.
+ * @param name
+ */
+export async function hello (name?: string): Promise<string> {
+  const msg: string = "Hello, " + name + "!";
+  return new Promise(resolve => setTimeout(() => resolve(msg), Delays.Long));
+}
