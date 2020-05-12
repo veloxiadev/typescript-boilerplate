@@ -1,7 +1,7 @@
 [![TypeScript version][ts-badge]][typescript-38]
 [![Node.js version][nodejs-badge]][nodejs]
 [![Build Status - Travis][travis-badge]][travis-ci]
-[![Build Status - GitHub Actions][gha-badge]][gha-ci]
+![Node.js CI](https://github.com/veloxiadev/typescript-boilerplate/workflows/Node.js%20CI/badge.svg)
 
 # Typescript Boilerplate
 
@@ -40,7 +40,5 @@ The source files are located in `/src`. To compile the files and generate javasc
 [nodejs]: https://nodejs.org/dist/latest-v12.x/docs/api/
 [travis-badge]: https://travis-ci.org/veloxiadev/typescript-boilerplate.svg?branch=master
 [travis-ci]: https://travis-ci.org/veloxiadev/typescript-boilerplate.svg?branch=master
-[gha-badge]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fveloxiadev%2Ftypescript-boilerplate%2Ftypescript-boilerplate%2Fbadge&style=flat
-[gha-ci]: https://github.com/veloxiadev/typescript-boilerplate/actions
 [typescript]: https://www.typescriptlang.org/
 [typescript-38]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html
