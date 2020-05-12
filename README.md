@@ -1,6 +1,5 @@
 [![TypeScript version][ts-badge]][typescript-38]
 [![Node.js version][nodejs-badge]][nodejs]
-[![APLv2][license-badge]][license]
 [![Build Status - Travis][travis-badge]][travis-ci]
 [![Build Status - GitHub Actions][gha-badge]][gha-ci]
 
@@ -45,5 +44,3 @@ The source files are located in `/src`. To compile the files and generate javasc
 [gha-ci]: https://github.com/veloxiadev/typescript-boilerplate/actions
 [typescript]: https://www.typescriptlang.org/
 [typescript-38]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html
-[license-badge]: https://img.shields.io/badge/license-APLv2-blue.svg
-[license]: https://github.com/veloxiadev/typescript-boilerplate/blob/master/LICENSE
