@@ -33,7 +33,32 @@ The `tsc` command is required to compile Typescript files. Install it globally:
 npm install -g typescript
 ```
 
-The source files are located in `/src`. To compile the files and generate javascript, run `yarn build`. By default, the `yarn build` command will generate javascript files (in the `/dist` directory) together with documentation (in the `/docs` directory).
+The source files are located in `/src`. To compile the files and generate javascript, run `npm run build`. By default, the `npm run build` command will generate javascript files (in the `/dist` directory) together with documentation (in the `/docs` directory).
+
+## Commands
+
+```bash
+# Compile all files
+npm run build
+
+# Build and recompile when files are changed
+npm run watch
+
+# Build documentation only
+npm run build:docs
+
+# Build source files only
+npm run build:main
+
+# Run tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Lint
+npm run lint
+```
 
 [ts-badge]: https://img.shields.io/badge/TypeScript-3.8-blue.svg
 [nodejs-badge]: https://img.shields.io/badge/Node.js->=%2012.13-blue.svg
