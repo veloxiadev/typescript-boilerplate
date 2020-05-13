@@ -1,7 +1,7 @@
 [![TypeScript version][ts-badge]][typescript-38]
 [![Node.js version][nodejs-badge]][nodejs]
 [![Build Status - Travis][travis-badge]][travis-ci]
-![Node.js CI](https://github.com/veloxiadev/typescript-boilerplate/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/veloxiadev/typescript-boilerplate/actions?query=workflow%3A%22Node.js+CI%22)
 
 # Typescript Boilerplate
 
