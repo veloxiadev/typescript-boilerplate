@@ -4,9 +4,6 @@
   "version": "0.0.0",
   "author": "Viktor Svensson <viktor@veloxia.se> (https://www.veloxia.se)",
   "license": "MIT",
-  "engines": {
-    "node": ">= 12.13"
-  },
   "scripts": {
     "clean": "yarn clean:lib && yarn clean:tests",
     "clean:lib": "[ ! -d lib ] || rimraf lib",
