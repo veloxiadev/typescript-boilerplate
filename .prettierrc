@@ -1,13 +1,6 @@
 {
   "singleQuote": false,
-  "trailingComma": "es5",
   "semi": true,
-  "overrides": [
-    {
-      "files": "*.ts",
-      "options": {
-        "parser": "typescript"
-      }
-    }
-  ]
+  "trailingComma": "all",
+  "proseWrap": "always"
 }

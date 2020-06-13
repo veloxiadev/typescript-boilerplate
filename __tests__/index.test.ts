@@ -1,4 +1,4 @@
-import { hello, Delays } from "../src/index";
+import { hello, Delays } from "../src";
 
 describe("hello world function", () => {
   jest.useFakeTimers();
@@ -15,11 +15,11 @@ describe("hello world function", () => {
   });
 
   // Assert if timeout actually occurred
-  it("delays the message by 2 seconds", () => {
+  it("delays the message by 0.5 seconds", () => {
     expect(setTimeout).toHaveBeenCalledTimes(1);
     expect(setTimeout).toHaveBeenLastCalledWith(
       expect.any(Function),
-      Delays.Long
+      Delays.Short,
     );
   });
 

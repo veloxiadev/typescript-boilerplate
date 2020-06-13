@@ -4,21 +4,16 @@
   "version": "0.0.0",
   "author": "Viktor Svensson <viktor@veloxia.se> (https://www.veloxia.se)",
   "license": "MIT",
-  "engines": {
-    "node": ">= 12.13"
-  },
   "scripts": {
-    "clean": "npm run clean:dist && npm run clean:docs",
-    "clean:dist": "[ ! -d dist ] || rimraf dist",
-    "clean:docs": "[ ! -d docs ] || rimraf docs",
+    "clean": "yarn clean:lib && yarn clean:tests",
+    "clean:lib": "[ ! -d lib ] || rimraf lib",
     "clean:tests": "[ ! -d coverage ] || rimraf coverage",
-    "build": "npm run lint && npm run build:main && npm run build:docs",
-    "build:main": "npm run clean:dist && tsc --build tsconfig.build.json",
-    "build:docs": "npm run clean:docs && ./node_modules/.bin/typedoc --readme ./README.md --out docs src",
-    "watch": "npm run clean:dist && tsc --build tsconfig.build.json --watch",
-    "test": "npm run clean:tests && jest --coverage",
-    "test:watch": "npm run clean:tests && jest --watch",
-    "lint": "eslint . --ext .ts,.tsx"
+    "build": "yarn clean:lib && tsc --build tsconfig.json",
+    "bundle": "npx webpack --config webpack.config.js",
+    "watch": "yarn clean:lib && tsc --build tsconfig.json --watch",
+    "test": "yarn clean:tests && jest --coverage",
+    "test:watch": "yarn clean:tests && jest --watch",
+    "lint": "eslint src --ext .ts,.tsx"
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
@@ -33,9 +28,11 @@
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",
     "ts-jest": "^25.5.1",
+    "ts-loader": "^7.0.5",
     "tsutils": "^3.17.1",
-    "typedoc": "^0.17.6",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "tslib": "~1.10.0"
