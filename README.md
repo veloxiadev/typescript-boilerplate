@@ -1,7 +1,4 @@
-[![TypeScript version][ts-badge]][typescript-38]
-[![Node.js version][nodejs-badge]][nodejs]
-[![Build Status - Travis][travis-badge]][travis-ci]
-[![Node.js CI][ga-badge]][ga-ci]
+[![TypeScript version][ts-badge]][typescript-38] [![Node.js version][nodejs-badge]][nodejs] [![Build Status - Travis][travis-badge]][travis-ci] [![Node.js CI][ga-badge]][ga-ci]
 
 # Typescript Boilerplate
 
@@ -22,6 +19,9 @@ cd ts-project
 ### Install the dependencies
 
 ```bash
+# Yarn
+yarn
+# NPM
 npm install
 ```
 
@@ -30,34 +30,34 @@ npm install
 The `tsc` command is required to compile Typescript files. Install it globally:
 
 ```bash
-npm install -g typescript
+# Yarn
+yarn global add typescript --prefix /usr/local
+# NPM
+npm install --global typescript
 ```
 
-The source files are located in `/src`. To compile the files and generate javascript, run `npm run build`. By default, the `npm run build` command will generate javascript files (in the `/dist` directory) together with documentation (in the `/docs` directory).
+The source files are located in `/src`. To compile the files and generate javascript, run `yarn build`. By default, the `yarn build` command will generate javascript (Node) files (in the `/lib` directory). The `yarn bundle` command will output a minified bundle in the `/dist` directory. 
 
 ## Commands
 
 ```bash
-# Compile all files
-npm run build
+# Build module
+yarn build
 
-# Build and recompile when files are changed
-npm run watch
+# Build module and recompile when files are changed
+yarn watch
 
-# Build documentation only
-npm run build:docs
-
-# Build source files only
-npm run build:main
+# Bundle for web usage
+yarn bundle
 
 # Run tests
-npm test
+yarn test
 
 # Run tests in watch mode
-npm run test:watch
+yarn test:watch
 
 # Lint
-npm run lint
+yarn lint
 ```
 
 [ts-badge]: https://img.shields.io/badge/TypeScript-3.8-blue.svg
